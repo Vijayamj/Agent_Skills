@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Post Architect - Premium Content Generator</title>
+    <meta name="description" content="Generate high-impact, professional LinkedIn posts in seconds with AI-driven architecture.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <main class="app-container">
+        <header>
+            <div class="logo">
+                <span class="icon">🚀</span>
+                <span class="text">Post<b>Architect</b></span>
+            </div>
+            <div class="header-actions">
+                <button id="theme-toggle" class="btn-icon">🌓</button>
+            </div>
+        </header>
+
+        <section class="generator-grid">
+            <!-- Input Panel -->
+            <div class="panel input-panel glass">
+                <h2>Post Blueprint</h2>
+                <div class="form-group">
+                    <label for="topic">What's the topic?</label>
+                    <input type="text" id="topic" placeholder="e.g., The future of AI in coding" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tone">Tone of Voice</label>
+                    <select id="tone">
+                        <option value="professional">Professional & Insightful</option>
+                        <option value="conversational">Conversational & Relatable</option>
+                        <option value="provocative">Provocative & Bold</option>
+                        <option value="inspirational">Inspirational & Visionary</option>
+                        <option value="humorous">Lighthearted & Witty</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="key-points">Key Points (One per line)</label>
+                    <textarea id="key-points" rows="4" placeholder="- AI is a co-pilot, not a pilot&#10;- Productivity is up by 40%&#10;- It's about creative energy"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="cta">Call to Action</label>
+                    <input type="text" id="cta" placeholder="e.g., What do you think about this?">
+                </div>
+
+                <button id="generate-btn" class="btn-primary">
+                    <span class="btn-text">Architect Post</span>
+                    <span class="btn-icon">✨</span>
+                </button>
+            </div>
+
+            <!-- Preview Panel -->
+            <div class="panel preview-panel glass">
+                <div class="preview-header">
+                    <h2>Live Preview</h2>
+                    <div class="preview-actions">
+                        <button id="copy-btn" class="btn-secondary" title="Copy to Clipboard">
+                            <span class="icon">📝</span> Copy
+                        </button>
+                    </div>
+                </div>
+
+                <div class="linkedin-mockup">
+                    <div class="mockup-header">
+                        <div class="avatar"></div>
+                        <div class="user-info">
+                            <div class="name">You</div>
+                            <div class="headline">Future Architect • Now</div>
+                            <div class="time">Just now • 🌐</div>
+                        </div>
+                    </div>
+                    <div id="post-output" class="mockup-body">
+                        <p class="placeholder-text">Your architected post will appear here...</p>
+                    </div>
+                    <div class="mockup-footer">
+                        <div class="footer-item">👍 Like</div>
+                        <div class="footer-item">💬 Comment</div>
+                        <div class="footer-item">🔁 Repost</div>
+                        <div class="footer-item">➡️ Send</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="app-footer">
+        <p>&copy; 2026 PostArchitect. Crafted for high impact.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
